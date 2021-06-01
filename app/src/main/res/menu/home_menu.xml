@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_drawer_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_pin_location"
+            android:icon="@drawable/pin_location_drawer_icon"
+            android:title="Pin Location" />
+        <item
+            android:id="@+id/nav_change_pass"
+            android:icon="@drawable/change_password_drawer_icon"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/nav_view_pin_location"
+            android:icon="@drawable/view_pin_drawer_icon"
+            android:title="View Pin Locations" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_drawer_icon"
+            android:title="Logout " />
+
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_login"
+            android:title="Login " />
+    </group>
+</menu>
