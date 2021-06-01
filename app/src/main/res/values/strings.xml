@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Location it</string>
+    <string name="title_activity_view__pin">Map</string>
+    <string name="title_activity_add__new__pin">Map</string>
+
+
+    <attr name="colorNavigationItem" format="color" />
+    <attr name="colorNavigationItemSelected" format="color" />
+
+    <attr name="drawableNavigationItemBackground" format="reference" />
+
+</resources>

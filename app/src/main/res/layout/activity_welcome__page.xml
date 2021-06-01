@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@drawable/welcome_screen_back"
+    tools:context=".Welcome_Page">
+
+
+    <ImageView
+        android:id="@+id/logo_splash"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:layout_marginBottom="25dp"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_guest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_guest"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_below="@id/welcome_text"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_edit"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:onClick="go_as_guest"
+        android:text="Login As Guest"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_edit"
+        android:fontFamily="@font/poppins"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:onClick="go_to_signup"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/guest_welcome_btn"
+        android:fontFamily="@font/poppins"
+        android:text="Login"
+        android:onClick="go_to_login_page"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textview_welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:text="Lets Pin Your\nFavorite Location"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
